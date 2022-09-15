@@ -247,10 +247,10 @@ def stats(update, context):
 def start(update, context):
     buttons = ButtonMaker()
     if EMOJI_THEME is True:
-        buttons.buildbutton(f"😎 {START_BTN1_NAME}", f"{https://t.me/Lonewolfo}")
+        buttons.buildbutton(f"😎 {START_BTN1_NAME}", f"{START_BTN1_URL}")
         buttons.buildbutton(f"🔥 {START_BTN2_NAME}", f"{START_BTN2_URL}")
     else:
-        buttons.buildbutton(f"{owner}", f"{START_BTN1_URL}")
+        buttons.buildbutton(f"{START_BTN1_NAME}", f"{START_BTN1_URL}")
         buttons.buildbutton(f"{START_BTN2_NAME}", f"{START_BTN2_URL}")
     reply_markup = InlineKeyboardMarkup(buttons.build_menu(2))
     if CustomFilters.authorized_user(update) or CustomFilters.authorized_chat(update):
