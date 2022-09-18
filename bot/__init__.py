@@ -677,7 +677,7 @@ try:
         raise KeyError
 except:
     START_BTN1_NAME = 'Owner'
-    START_BTN1_URL = 'https://t.me/profesorleech222bot'
+    START_BTN1_URL = 'https://t.me/Lonewolfo'
 
 try:
     START_BTN2_NAME = getConfig('START_BTN2_NAME')
